@@ -38,23 +38,23 @@ This project follows the Cross-Industry Standard Process for Data Mining (CRISP-
 
 This table summarizes the key performance metrics for all models and feature sets tested throughout the notebook.
 
-| Feature Set         | Model                  | Class Weighting | Test Accuracy | 'Yes' Class Precision | 'Yes' Class Recall |
-| ------------------- | ---------------------- | --------------- |---------------|-----------------------|--------------------|
-| **Initial**         | Logistic Regression    | None            | 89%           | 0.00                  | 0.00               |
-|                     | K-Nearest Neighbors    | None            | 88%           | 0.32                  | 0.08               |
-|                     | Decision Tree          | None            | 86%           | 0.22                  | 0.09               |
-|                     | SVM                    | None            | 89%           | 0.00                  | 0.00               |
-| **All**             | Logistic Regression    | None            | 90%           | 0.71                  | 0.21               |
-|                     | K-Nearest Neighbors    | None            | 90%           | 0.54                  | 0.29               |
-|                     | Decision Tree          | None            | 84%           | 0.31                  | 0.34               |
-|                     | SVM                    | None            | 89%           | 0.00                  | 0.00               |
-| **Curated**         | Logistic Regression    | None            | 90%           | 0.64                  | 0.21               |
-|                     | K-Nearest Neighbors    | None            | 90%           | 0.56                  | 0.31               |
-|                     | Decision Tree          | None            | 89%           | 0.57                  | 0.25               |
-|                     | SVM                    | None            | 89%           | 0.00                  | 0.00               |
-| **Curated**         | **Logistic Regression**| **Balanced**    | **78%**       | **0.30**              | **0.69**           |
-|                     | **Decision Tree**      | **Balanced**    | **85%**       | **0.39**              | **0.55**           |
-|                     | **SVM**                | **Balanced**    | **73%**       | **0.25**              | **0.73**           |
+| Feature Set         | Model                  | Tuning | Class Weighting | Test Accuracy | 'Yes' Class Precision | 'Yes' Class Recall |
+| ------------------- | ---------------------- |--------|-----------------|---------------|-----------------------|--------------------|
+| **Initial**         | Logistic Regression    | No     | None            | 89%           | 0.00                  | 0.00               |
+|                     | K-Nearest Neighbors    | No     | None            | 88%           | 0.32                  | 0.08               |
+|                     | Decision Tree          | No     | None            | 86%           | 0.22                  | 0.09               |
+|                     | SVM                    | No     | None            | 89%           | 0.00                  | 0.00               |
+| **All**             | Logistic Regression    | Yes    | None            | 90%           | 0.71                  | 0.21               |
+|                     | K-Nearest Neighbors    | Yes    | None            | 90%           | 0.54                  | 0.29               |
+|                     | Decision Tree          | Yes    | None            | 84%           | 0.31                  | 0.34               |
+|                     | SVM                    | Yes    | None            | 89%           | 0.00                  | 0.00               |
+| **Curated**         | Logistic Regression    | Yes    | None            | 90%           | 0.64                  | 0.21               |
+|                     | K-Nearest Neighbors    | Yes    | None            | 90%           | 0.56                  | 0.31               |
+|                     | Decision Tree          | Yes    | None            | 89%           | 0.57                  | 0.25               |
+|                     | SVM                    | Yes    | None            | 89%           | 0.00                  | 0.00               |
+| **Curated**         | **Logistic Regression**| Yes    | **Balanced**    | **78%**       | **0.30**              | **0.69**           |
+|                     | **Decision Tree**      | Yes    | **Balanced**    | **85%**       | **0.39**              | **0.55**           |
+|                     | **SVM**                | Yes    | **Balanced**    | **73%**       | **0.25**              | **0.73**           |
 
 **Final Conclusion:**
 
